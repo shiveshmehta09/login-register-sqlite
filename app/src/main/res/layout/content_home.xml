@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.shivesh.loginregister.HomeActivity"
+    tools:showIn="@layout/app_bar_home"
+    android:columnCount="2">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/image_btn_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/cardleft_margin"
+            android:layout_marginTop="@dimen/cardleft_margin">
+
+            <ImageButton
+                android:layout_width="@dimen/image_btn_width"
+                android:layout_height="@dimen/image_btn_height"
+                android:background="@drawable/aptitudebutton"
+                android:clickable="true"
+                android:id="@+id/img_btn_one"
+                android:onClick="meclick"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorBackground"
+                    android:text="Database Info"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/image_btn_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/cardleft_margin"
+            android:layout_marginTop="@dimen/cardleft_margin">
+
+            <ImageButton
+                android:layout_width="@dimen/image_btn_width"
+                android:layout_height="@dimen/image_btn_height"
+                android:background="@drawable/picture2"
+                android:clickable="true"
+                android:id="@+id/img_btn_two"
+                android:onClick="meclick"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBackground"
+                android:text="Resume"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/image_btn_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/cardleft_margin"
+            android:layout_marginTop="@dimen/cardleft_margin">
+
+        <ImageButton
+            android:layout_width="@dimen/image_btn_width"
+            android:layout_height="@dimen/image_btn_height"
+            android:background="@drawable/technical"
+            android:clickable="true"
+            android:id="@+id/img_btn_three"
+            android:onClick="meclick"/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBackground"
+            android:text="Aptitude"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/image_btn_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/cardleft_margin"
+            android:layout_marginTop="@dimen/cardleft_margin">
+
+        <ImageButton
+            android:layout_width="@dimen/image_btn_width"
+            android:layout_height="@dimen/image_btn_height"
+            android:background="@drawable/resume"
+            android:clickable="true"
+            android:id="@+id/img_btn_four"
+            android:onClick="meclick"/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBackground"
+            android:text="C++"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/image_btn_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/cardleft_margin"
+            android:layout_marginTop="@dimen/cardleft_margin">
+
+
+        <ImageButton
+            android:layout_width="@dimen/image_btn_width"
+            android:layout_height="@dimen/image_btn_height"
+            android:background="@drawable/cover"
+            android:clickable="true"
+            android:id="@+id/img_btn_five"
+            android:onClick="meclick"/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBackground"
+            android:text="Value Tag"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/image_btn_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/cardleft_margin"
+            android:layout_marginTop="@dimen/cardleft_margin">
+
+        <ImageButton
+            android:layout_width="@dimen/image_btn_width"
+            android:layout_height="@dimen/image_btn_height"
+            android:background="@drawable/pdp"
+            android:clickable="true"
+            android:id="@+id/img_btn_six"
+            android:onClick="meclick"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBackground"
+                android:text="Find Center"/>
+        </LinearLayout>
+</GridLayout>

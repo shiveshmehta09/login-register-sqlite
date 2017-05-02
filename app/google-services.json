@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "217541442204",
+    "firebase_url": "https://login-register-sqlite.firebaseio.com",
+    "project_id": "login-register-sqlite",
+    "storage_bucket": "login-register-sqlite.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217541442204:android:2c0aa319244fd12a",
+        "android_client_info": {
+          "package_name": "com.shivesh.loginregister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217541442204-pc8m0mn8l34rn0394ksr2eo088h4alub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuM9k6zILiYN3guGG77THKZRgaMqPe9bg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

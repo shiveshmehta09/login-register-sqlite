@@ -23,7 +23,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;*/
 
 /**
- * Created by lalit on 8/27/2016.
+ * Created by Shivesh on 8/27/2016.
  */
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 

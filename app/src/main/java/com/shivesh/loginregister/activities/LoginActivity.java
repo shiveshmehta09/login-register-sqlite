@@ -50,18 +50,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
      */
     private void initViews() {
 
-        nestedScrollView = (NestedScrollView) findViewById(R.id.nestedScrollView);
+        nestedScrollView = findViewById(R.id.nestedScrollView);
 
-        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.textInputLayoutEmail);
-        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.textInputLayoutPassword);
+        textInputLayoutEmail = findViewById(R.id.textInputLayoutEmail);
+        textInputLayoutPassword = findViewById(R.id.textInputLayoutPassword);
 
-        textInputEditTextEmail = (TextInputEditText) findViewById(R.id.textInputEditTextEmail);
-        textInputEditTextPassword = (TextInputEditText) findViewById(R.id.textInputEditTextPassword);
+        textInputEditTextEmail = findViewById(R.id.textInputEditTextEmail);
+        textInputEditTextPassword = findViewById(R.id.textInputEditTextPassword);
 
-        appCompatButtonLogin = (AppCompatButton) findViewById(R.id.appCompatButtonLogin);
+        appCompatButtonLogin = findViewById(R.id.appCompatButtonLogin);
 
-        textViewLinkRegister = (AppCompatTextView) findViewById(R.id.textViewLinkRegister);
-        textViewLinkForgetPassword = (AppCompatTextView) findViewById(R.id.textforgetpassword);
+        textViewLinkRegister = findViewById(R.id.textViewLinkRegister);
+        textViewLinkForgetPassword = findViewById(R.id.textforgetpassword);
     }
 
     /**

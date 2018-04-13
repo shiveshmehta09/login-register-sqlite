@@ -26,7 +26,7 @@ public class HomeActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
@@ -41,25 +41,25 @@ public class HomeActivity extends AppCompatActivity
         });
 
 */
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        mNavigationView = (NavigationView)findViewById(R.id.nav_view);
+        mNavigationView = findViewById(R.id.nav_view);
 
         View header=mNavigationView.getHeaderView(0);
-        tv_email=(TextView)header.findViewById(R.id.textV_email);
+        tv_email= header.findViewById(R.id.textV_email);
         tv_email.setText(getIntent().getStringExtra("EMAIL"));
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -109,7 +109,7 @@ public class HomeActivity extends AppCompatActivity
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -141,6 +141,5 @@ public class HomeActivity extends AppCompatActivity
         if(v.getId()==R.id.img_btn_six) {
             Toast.makeText(this, "You Clicked On FIND CENTER", Toast.LENGTH_SHORT).show();
         }
-
     }
 }

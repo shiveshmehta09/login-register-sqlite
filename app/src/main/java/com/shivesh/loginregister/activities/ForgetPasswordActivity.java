@@ -28,8 +28,8 @@ public class ForgetPasswordActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forget_password);
 
-        textInputEditText=(TextInputEditText)findViewById(R.id.textInputEditTextEnter_Email);
-        appCompatButton=(AppCompatButton)findViewById(R.id.appCompatButtonForget);
+        textInputEditText= findViewById(R.id.textInputEditTextEnter_Email);
+        appCompatButton= findViewById(R.id.appCompatButtonForget);
 
      //   auth = FirebaseAuth.getInstance();
 

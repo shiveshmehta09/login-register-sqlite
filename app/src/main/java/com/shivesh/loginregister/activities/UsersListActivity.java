@@ -45,8 +45,8 @@ public class UsersListActivity extends AppCompatActivity {
      * This method is to initialize views
      */
     private void initViews() {
-        textViewName = (AppCompatTextView) findViewById(R.id.textViewName);
-        recyclerViewUsers = (RecyclerView) findViewById(R.id.recyclerViewUsers);
+        textViewName = findViewById(R.id.textViewName);
+        recyclerViewUsers = findViewById(R.id.recyclerViewUsers);
     }
 
     /**

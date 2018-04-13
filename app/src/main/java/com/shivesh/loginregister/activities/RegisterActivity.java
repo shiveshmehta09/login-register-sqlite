@@ -48,7 +48,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private DatabaseHelper databaseHelper;
     private User user;
 
-   // private FirebaseAuth auth;
+    // private FirebaseAuth auth;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,21 +64,21 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
      * This method is to initialize views
      */
     private void initViews() {
-        nestedScrollView = (NestedScrollView) findViewById(R.id.nestedScrollView);
+        nestedScrollView = findViewById(R.id.nestedScrollView);
 
-        textInputLayoutName = (TextInputLayout) findViewById(R.id.textInputLayoutName);
-        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.textInputLayoutEmail);
-        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.textInputLayoutPassword);
-        textInputLayoutConfirmPassword = (TextInputLayout) findViewById(R.id.textInputLayoutConfirmPassword);
+        textInputLayoutName = findViewById(R.id.textInputLayoutName);
+        textInputLayoutEmail = findViewById(R.id.textInputLayoutEmail);
+        textInputLayoutPassword = findViewById(R.id.textInputLayoutPassword);
+        textInputLayoutConfirmPassword = findViewById(R.id.textInputLayoutConfirmPassword);
 
-        textInputEditTextName = (TextInputEditText) findViewById(R.id.textInputEditTextName);
-        textInputEditTextEmail = (TextInputEditText) findViewById(R.id.textInputEditTextEmail);
-        textInputEditTextPassword = (TextInputEditText) findViewById(R.id.textInputEditTextPassword);
-        textInputEditTextConfirmPassword = (TextInputEditText) findViewById(R.id.textInputEditTextConfirmPassword);
+        textInputEditTextName = findViewById(R.id.textInputEditTextName);
+        textInputEditTextEmail = findViewById(R.id.textInputEditTextEmail);
+        textInputEditTextPassword = findViewById(R.id.textInputEditTextPassword);
+        textInputEditTextConfirmPassword = findViewById(R.id.textInputEditTextConfirmPassword);
 
-        appCompatButtonRegister = (AppCompatButton) findViewById(R.id.appCompatButtonRegister);
+        appCompatButtonRegister = findViewById(R.id.appCompatButtonRegister);
 
-        appCompatTextViewLoginLink = (AppCompatTextView) findViewById(R.id.appCompatTextViewLoginLink);
+        appCompatTextViewLoginLink = findViewById(R.id.appCompatTextViewLoginLink);
 
     }
 
@@ -149,27 +149,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             user.setPassword(textInputEditTextPassword.getText().toString().trim());
 
             databaseHelper.addUser(user);
-
-            /*String email=textInputEditTextEmail.getText().toString(),password=textInputEditTextPassword.getText().toString();
-            auth.createUserWithEmailAndPassword(email, password)
-                    .addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            Toast.makeText(RegisterActivity.this, "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
-                            // If sign in fails, display a message to the user. If sign in succeeds
-                            // the auth state listener will be notified and logic to handle the
-                            // signed in user can be handled in the listener.
-                            if (!task.isSuccessful()) {
-                                Toast.makeText(RegisterActivity.this, "Authentication failed." + task.getException(),
-                                        Toast.LENGTH_SHORT).show();
-                            } else {
-                                // Snack Bar to show success message that record saved successfully
-                                Snackbar.make(nestedScrollView, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
-                                emptyInputEditText();
-                            }
-                        }
-                    });*/
-
+            
             // Snack Bar to show success message that record saved successfully
             Snackbar.make(nestedScrollView, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
             emptyInputEditText();
